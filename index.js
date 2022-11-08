@@ -26,14 +26,14 @@ const loadDaftPunk = () => {
 }
 
 const loadPinkFloyd = () => {
-  const options2 = {
+  const options = {
     method: "GET",
     headers: {
       "X-RapidAPI-Key": "5d8f9f1e27msh1d9012c006ada61p1b9982jsnedaec964490a",
       "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com"
     }
   }
-  fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=pinkfloyd", options2)
+  fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=pinkfloyd", options)
     .then((response) => response.json())
     .then((response) => {
       const secondContainer = document.querySelector(".secondRow")
